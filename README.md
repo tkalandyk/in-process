@@ -62,12 +62,12 @@ SigninLogs
 <img width="875" height="445" alt="Entra ID (Azure) Authentication Success" src="https://github.com/user-attachments/assets/dc8644c7-7e19-4961-bb53-0e2e71c0abf1" />
 
 
-🚫 2. Failed Azure Sign-Ins (Entra ID)
+## 🚫 2. Failed Azure Sign-Ins (Entra ID)
 
-What this shows:
+**What this shows:**
 Where failed login attempts occurred and how frequently.
 
-Why this matters:
+**Why this matters:**
 Failed logins help identify where authentication attempts are failing, which is important context for security teams and leadership.
 
 📄 KQL Query
