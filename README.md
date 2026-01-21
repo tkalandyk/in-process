@@ -81,10 +81,10 @@ SigninLogs
 
 ```
 
-📸 Map Visualization
+##📸 Map Visualization
 <img width="1134" height="461" alt="Entra ID (Azure) Authentication Failures" src="https://github.com/user-attachments/assets/935163cd-e9c3-4ab6-a200-530bbf65dfa2" />
 
-📊 Summary Table (Example)
+##📊 Summary Table (Example)
 
 | City            | Country    | Failed Logins |
 | --------------- | ---------- | ------------- |
