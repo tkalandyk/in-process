@@ -50,8 +50,6 @@ Each dataset is grouped by **city and country** and visualized using maps.
 **What this shows:**  
 Where successfully loggins originated over the last 7 days.
 
-**Why this matters:**  
-This establishes a **baseline of normal access behavior**, making it easier to recognize unusual patterns later.
 
 📄 **KQL Query**
 ```kql
