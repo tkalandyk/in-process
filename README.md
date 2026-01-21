@@ -61,6 +61,7 @@ SigninLogs
 📸 Map Visualization
 <img width="875" height="445" alt="Entra ID (Azure) Authentication Success" src="https://github.com/user-attachments/assets/dc8644c7-7e19-4961-bb53-0e2e71c0abf1" />
 
+---
 
 ## 🚫 2. Failed Azure Sign-Ins (Entra ID)
 
@@ -92,17 +93,17 @@ SigninLogs
 | Odry            | Czechia    | 474           |
 | Tashkent        | Uzbekistan | 454           |
 
+---
 
+## 🏗️ 3. Azure Resource Creation Activity
 
-🏗️ 3. Azure Resource Creation Activity
-
-What this shows:
+**What this shows:**
 Where cloud resources (VMs, NSGs, etc.) were successfully created from.
 
-Why this matters:
+**Why this matters:**
 Resource creation represents administrative-level activity, making visibility into where it occurs important for accountability and auditing.
 
-📄 KQL Query
+## 📄 KQL Query
 
 ```
 
@@ -126,10 +127,10 @@ AzureActivityRecords
 
 ```
 
-📸 Map Visualization
+## 📸 Map Visualization
 <img width="1169" height="460" alt="Azure Resource Creation" src="https://github.com/user-attachments/assets/b5523b1b-a839-413a-9d97-50c9fadc7bbe" />
 
-📊 Summary Table (Example)
+## 📊 Summary Table (Example)
 
 | Country       | Resource Creations |
 | ------------- | ------------------ |
@@ -137,16 +138,17 @@ AzureActivityRecords
 | Germany       | 6                  |
 | Taiwan        | 9                  |
 
+---
 
-💻 4. Virtual Machine Authentication Failures
+## 💻 4. Virtual Machine Authentication Failures
 
-What this shows:
+**What this shows:**
 Failed login attempts directly against virtual machines.
 
-Why this matters:
+**Why this matters:**
 VM login failures show direct interaction attempts with compute resources, which is useful for understanding exposure.
 
-📄 KQL Query
+## 📄 KQL Query
 
 ```
 let GeoIPDB_FULL = _GetWatchlist("geoip");
@@ -158,12 +160,12 @@ DeviceLogonEvents
 
 ```
 
-📸 Map Visualization
+## 📸 Map Visualization
 
 <img width="998" height="456" alt="VM Authentication Failures" src="https://github.com/user-attachments/assets/8dbfa083-ec4a-48b7-ac7d-ce925c469461" />
 
 
-📊 Summary Table (Example)
+## 📊 Summary Table (Example)
 
 
 | City           | Country | Failed Attempts |
@@ -172,13 +174,14 @@ DeviceLogonEvents
 | Salt Lake City | US      | 5               |
 | London         | UK      | 3               |
 
+---
 
-🚨 5. Malicious Network Traffic Entering the Environment
+## 🚨 5. Malicious Network Traffic Entering the Environment
 
-What this shows:
+**What this shows:**
 Confirmed malicious network flows attempting to enter the Azure network.
 
-Why this matters:
+**Why this matters:**
 This highlights the constant global background traffic targeting internet-exposed cloud environments.
 
 📄 KQL Query
@@ -196,12 +199,12 @@ MaliciousFlows
 
 ```
 
-📸 Map Visualization
+## 📸 Map Visualization
 
 <img width="1109" height="478" alt="Malicious Traffic Entering the Network" src="https://github.com/user-attachments/assets/65ff5e70-6c4f-4427-93a3-2655f973fd4d" />
 
 
-📊 Summary Table (Example)
+## 📊 Summary Table (Example)
 
 | Country        | Malicious Flows |
 | -------------- | --------------- |
@@ -209,29 +212,43 @@ MaliciousFlows
 | United Kingdom | 30              |
 | Australia      | 25              |
 
-🧠 Key Takeaways
+---
 
-Large volumes of Azure security logs can be simplified and visualized
 
-Geographic mapping makes security activity immediately understandable
+## 📊 Distribution of Security Events (7-Day Window)
 
-KQL enables efficient summarization of complex telemetry
 
-Visual reporting improves communication with non-technical audiences
+<img width="692" height="411" alt="output" src="https://github.com/user-attachments/assets/0e091ce6-a06b-4575-9545-eb012a2e3e55" />
 
-🛠️ Skills Demonstrated
+<img width="627" height="470" alt="output (1)" src="https://github.com/user-attachments/assets/14ed0327-75c9-40c7-a9ff-0df605a35d08" />
 
-Kusto Query Language (KQL)
+---
 
-Azure Log Analytics
+## 🧠 Key Takeaways
 
-Entra ID authentication analysis
+**Large volumes** of Azure security logs can be simplified and visualized
 
-Network traffic analysis
+**Geographic mapping** makes security activity immediately understandable
 
-Security data visualization
+**KQL **enables efficient summarization of complex telemetry
 
-Executive and recruiter-focused communication
+**Visual reporting** improves communication with non-technical audiences
+
+---
+
+## 🛠️ Skills Demonstrated
+
+**Kusto Query Language (KQL)**
+
+**Azure Log Analytics**
+
+**Entra ID authentication analysis**
+
+**Network traffic analysis**
+
+**Security data visualization**
+
+**Executive and share holder communication**
 
 
 
